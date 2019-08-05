@@ -7,7 +7,7 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
 	state:{
-		items: ""
+		items: []
 	},
 	actions:{
 		fetchData({commit}){
@@ -22,6 +22,7 @@ export const store = new Vuex.Store({
 	mutations:{
 		updateData(state, items) {
 			state.items = items
+			console.log(state.items)
 		},
 	}
 

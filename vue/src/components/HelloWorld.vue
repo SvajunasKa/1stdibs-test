@@ -1,7 +1,9 @@
 <template>
   <div class="hello">
-    <h1>{{ $store }}</h1>
-
+    <div v-for="aaa in $store.state.items">
+    <p v-html="aaa"></p>
+  </div>
+    <!--{{$store.state.items}}-->
 
 
   </div>
@@ -13,6 +15,7 @@ export default {
   name: 'HelloWorld',
   data(){
   	return{
+  		xxx: '',
   		mss: "laba diena"
     }
   },
